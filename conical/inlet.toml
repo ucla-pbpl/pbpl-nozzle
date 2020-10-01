@@ -1,0 +1,19 @@
+[Model]
+Scale = 1               # 1e3=meter, 1=mm, 25.4=inch
+z0 = 0
+UseBSpline = false
+r_z = [
+    [-2.0, 0.0],
+    [-2.0, 0.5],
+    [-2.0, 1.0]]
+
+[[Output]]
+Type = 'STL'
+LinearDeflection = 0.1   # mm
+IsRelative = false
+AngularDeflection = 10.0  # deg
+Filename = 'inlet.stl'
+
+[[Output]]
+Type = 'STEP'
+Filename = 'inlet.stp'
